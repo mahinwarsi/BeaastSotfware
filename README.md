@@ -1,3 +1,3 @@
-# BeaastSotfware
+# BeastSotfware
 
-Welcome to Beast Software
+Welcome to Beast Software.
