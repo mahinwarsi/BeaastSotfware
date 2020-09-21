@@ -60,7 +60,7 @@ public class BeastSoftware {
                 break;
 
             case 3:
-                oddandeven();
+                oddAndEven();
                 break;
 
             case 4:
@@ -86,6 +86,7 @@ public class BeastSoftware {
             default:
                 System.out.println("Wrong choice");
         }
+        System.out.println("Made by Mahin");
         int yesNo1 = 0;
         do {
             System.out.println("Do you want to leave.");
@@ -113,7 +114,7 @@ public class BeastSoftware {
                     break;
 
                 case 3:
-                    oddandeven();
+                    oddAndEven();
                     break;
 
                 case 4:
@@ -142,7 +143,7 @@ public class BeastSoftware {
         } while (yesNo1 == 0);
     }
 
-    private static void oddandeven() {
+    private static void oddAndEven() {
         System.out.println("Hello " + name + " welcome to odd and even.");
         System.out.println("Pls. enter a number : ");
         int number18 = getIntAsInput();
