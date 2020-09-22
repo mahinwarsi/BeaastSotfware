@@ -86,7 +86,9 @@ public class BeastSoftware {
             default:
                 System.out.println("Wrong choice");
         }
-//sub
+    }
+
+    //sub
     private static void oddAndEven() {
         System.out.println("Hello " + name + " welcome to odd and even.");
         System.out.println("Pls. enter a number : ");
@@ -207,6 +209,9 @@ public class BeastSoftware {
             default:
                 System.out.println("You have taken a wrong choice.");
         }
+        System.out.println("Do you want to leave.");
+        System.out.println("Yes or no : ");
+        String yesNo = getStringAsInput();
     }
 
     //sub
