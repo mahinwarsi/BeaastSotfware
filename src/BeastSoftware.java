@@ -86,63 +86,7 @@ public class BeastSoftware {
             default:
                 System.out.println("Wrong choice");
         }
-        System.out.println("Made by Mahin");
-        int yesNo1 = 0;
-        do {
-            System.out.println("Do you want to leave.");
-            System.out.println("Yes or No");
-            String yesNo = getStringAsInput();
-            if (yesNo.equalsIgnoreCase("Yes")) ;
-            else if (yesNo.equalsIgnoreCase("No")) ;
-            System.out.println("1 = Calculator.");
-            System.out.println("2 = Create pyramids.");
-            System.out.println("3 = Check for odd and even.");
-            System.out.println("4 = Check for negative and positive.");
-            System.out.println("5 = Calculate Square area.");
-            System.out.println("6 = Calculate Rectangle area.");
-            System.out.println("7 = Calculate Triangle area.");
-            System.out.println("8 = Calculate Circle area.");
-            System.out.println("Have you made your choice : ");
-            int menu1 = getIntAsInput();
-            switch (menu) {
-                case 1:
-                    calculator();
-                    break;
-
-                case 2:
-                    pyramid();
-                    break;
-
-                case 3:
-                    oddAndEven();
-                    break;
-
-                case 4:
-                    negandpos();
-                    break;
-
-                case 5:
-                    areaofsquar();
-                    break;
-
-                case 6:
-                    areaofrectangle();
-                    break;
-
-                case 7:
-                    areaoftriangle();
-                    break;
-
-                case 8:
-                    areaofcircle();
-                    break;
-
-                default:
-                    System.out.println("Wrong choice");
-            }
-        } while (yesNo1 == 0);
-    }
-
+//sub
     private static void oddAndEven() {
         System.out.println("Hello " + name + " welcome to odd and even.");
         System.out.println("Pls. enter a number : ");
