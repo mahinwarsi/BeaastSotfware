@@ -1,8 +1,6 @@
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.lang.reflect.GenericDeclaration;
-import java.util.Scanner;
 
 public class BeastSoftware {
 
@@ -64,11 +62,11 @@ public class BeastSoftware {
                 break;
 
             case 4:
-                negandpos();
+                negAndPos();
                 break;
 
             case 5:
-                areaofsquar();
+                areaOfSquare();
                 break;
 
             case 6:
@@ -119,11 +117,11 @@ public class BeastSoftware {
                     break;
 
                 case 4:
-                    negandpos();
+                    negAndPos();
                     break;
 
                 case 5:
-                    areaofsquar();
+                    areaOfSquare();
                     break;
 
                 case 6:
@@ -167,7 +165,7 @@ public class BeastSoftware {
             System.out.println("Your number is odd");
     }
 
-    private static void negandpos() {
+    private static void negAndPos() {
         System.out.println("Hello " + name + " welcome to negitive and possitive.");
         System.out.println("Pls. enter a number : ");
         int number19 = getIntAsInput();
@@ -294,7 +292,7 @@ public class BeastSoftware {
         System.out.println("Total area of your Rectangle = " + sub6);
     }
 
-    private static void areaofsquar() {
+    private static void areaOfSquare() {
         System.out.println("Hello " + name + " welcome to Square area.");
         System.out.println("Pls. enter a number:");
         int number9 = getIntAsInput();
