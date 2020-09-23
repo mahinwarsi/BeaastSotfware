@@ -49,8 +49,8 @@ public class BeastSoftware {
         System.out.println("7 = Calculate Triangle area.");
         System.out.println("8 = Calculate Circle area.");
         System.out.println("Have you made your choice : ");
-        int menu = getIntAsInput();
-        switch (menu) {
+        int menu1 = getIntAsInput();
+        switch (menu1) {
             case 1:
                 calculator();
                 break;
@@ -86,6 +86,72 @@ public class BeastSoftware {
             default:
                 System.out.println("Wrong choice");
         }
+        System.out.println("Do you want to leave.");
+        System.out.println("Yes or No : ");
+        String yesNo1 = getStringAsInput();
+        if (yesNo1.equalsIgnoreCase("Yes")) {
+            System.exit(0);
+        }
+        int continueOrLeave = 0;
+        do {
+            System.out.println("1 = Calculator.");
+            System.out.println("2 = Create pyramids.");
+            System.out.println("3 = Check for odd and even.");
+            System.out.println("4 = Check for negative and positive.");
+            System.out.println("5 = Calculate Square area.");
+            System.out.println("6 = Calculate Rectangle area.");
+            System.out.println("7 = Calculate Triangle area.");
+            System.out.println("8 = Calculate Circle area.");
+            System.out.println("Have you made your choice : ");
+            int menu2 = getIntAsInput();
+            switch (menu2) {
+                case 1:
+                    calculator();
+                    break;
+
+                case 2:
+                    pyramid();
+                    break;
+
+                case 3:
+                    oddAndEven();
+                    break;
+
+                case 4:
+                    negandpos();
+                    break;
+
+                case 5:
+                    areaofsquar();
+                    break;
+
+                case 6:
+                    areaofrectangle();
+                    break;
+
+                case 7:
+                    areaoftriangle();
+                    break;
+
+                case 8:
+                    areaofcircle();
+                    break;
+
+                default:
+                    System.out.println("Wrong choice");
+            }
+            System.out.println("Do you want to leave.");
+            System.out.println("Yes or No : ");
+            String yesNo2 = getStringAsInput();
+            if (yesNo2.equalsIgnoreCase("Yes")) {
+                System.exit(0);
+                continueOrLeave = 1;
+            } else {
+                if (yesNo2.equalsIgnoreCase("No")) {
+                    continueOrLeave = 0;
+                }
+            }
+        } while (continueOrLeave == 0);
     }
 
     //sub
