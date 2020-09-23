@@ -90,6 +90,7 @@ public class BeastSoftware {
         System.out.println("Yes or No : ");
         String yesNo1 = getStringAsInput();
         if (yesNo1.equalsIgnoreCase("Yes")) {
+            System.out.println("Made By Mahin Alam Warsi.");
             System.exit(0);
         }
         int continueOrLeave = 0;
@@ -144,6 +145,7 @@ public class BeastSoftware {
             System.out.println("Yes or No : ");
             String yesNo2 = getStringAsInput();
             if (yesNo2.equalsIgnoreCase("Yes")) {
+                System.out.println("Made By Mahin Alam Warsi.");
                 System.exit(0);
                 continueOrLeave = 1;
             } else {
