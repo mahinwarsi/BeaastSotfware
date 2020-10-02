@@ -4,13 +4,11 @@ import java.io.InputStreamReader;
 
 public class Pyramid {
 
-    private static final BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
-
-    static void pyramid(String name) {
+    static void makePyramid(String name) {
         System.out.println("Hello " + name + " welcome to The pyramid's.");
         System.out.println("H for half pyramid and V for vertical pyramid");
-        String pyramidchoice = getStringAsInput();
-        switch (pyramidchoice) {
+        String pyramidChoice = UserInput.getStringAsInput();
+        switch (pyramidChoice) {
             case "H":
                 halfPyramid();
                 break;
@@ -25,7 +23,7 @@ public class Pyramid {
 
     private static void verticalPyramid() {
         System.out.println("Pls. enter your number : ");
-        int number21 = getIntAsInput();
+        int number21 = UserInput.getIntAsInput();
         for (int a = 1; a <= number21; ++a) {
             for (int m = 1; m <= a; ++m) {
                 System.out.print("* ");
@@ -43,7 +41,7 @@ public class Pyramid {
 
     private static void halfPyramid() {
         System.out.println("Pls. enter your number :");
-        int number20 = getIntAsInput();
+        int number20 = UserInput.getIntAsInput();
         for (int i = 1; i <= number20; ++i) {
             for (int j = 1; j <= i; ++j) {
                 System.out.print("* ");
@@ -51,20 +49,4 @@ public class Pyramid {
             System.out.println();
         }
     }
-
-    private static String getStringAsInput() {
-        String data = null;
-
-        try {
-            data = bufferedReader.readLine();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        return data;
-    }
-
-    public static int getIntAsInput() {
-        return Integer.parseInt(getStringAsInput());
-    }
-
 }

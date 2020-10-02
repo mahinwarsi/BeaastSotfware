@@ -4,8 +4,6 @@ import java.io.InputStreamReader;
 
 public class Calculator {
 
-    private static final BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
-
     public void calculate(String name) {
         System.out.println("Hello " + name + " welcome to The Calculator.");
         System.out.println("What would you ike to do.");
@@ -13,7 +11,7 @@ public class Calculator {
         System.out.println("- for Substraction");
         System.out.println("* for Multiply");
         System.out.println("/ for Divide");
-        String number = getStringAsInput();
+        String number = UserInput.getStringAsInput();
         switch (number) {
             case "+":
                 add();
@@ -34,52 +32,37 @@ public class Calculator {
 
     private void divide() {
         System.out.println("Pls. enter your First number");
-        int number7 = getIntAsInput();
+        int number7 = UserInput.getIntAsInput();
         System.out.println("Pls. enter your Second number");
-        int number8 = getIntAsInput();
+        int number8 = UserInput.getIntAsInput();
         int sum4 = number7 / number8;
         System.out.println("Performing Division...Total = " + sum4);
     }
 
     private void multiply() {
         System.out.println("Pls. enter your First number");
-        int number5 = getIntAsInput();
+        int number5 = UserInput.getIntAsInput();
         System.out.println("Pls. enter your Second number");
-        int number6 = getIntAsInput();
+        int number6 = UserInput.getIntAsInput();
         int result = number5 * number6;
         System.out.println("Performing Multiplication...Total = " + result);
     }
 
     private void subtract() {
         System.out.println("Pls. enter your First number");
-        int number3 = getIntAsInput();
+        int number3 = UserInput.getIntAsInput();
         System.out.println("Pls. enter your Second number");
-        int number4 = getIntAsInput();
+        int number4 = UserInput.getIntAsInput();
         int sum2 = number3 - number4;
         System.out.println("Performing Substraction...Total = " + sum2);
     }
 
     private void add() {
         System.out.println("Pls. enter your First number");
-        int number1 = getIntAsInput();
+        int number1 = UserInput.getIntAsInput();
         System.out.println("Pls. enter your Second number");
-        int number2 = getIntAsInput();
+        int number2 = UserInput.getIntAsInput();
         int sum1 = number1 + number2;
         System.out.println("Performing Addition...Total = " + sum1);
-    }
-
-    private static String getStringAsInput() {
-        String data = null;
-
-        try {
-            data = bufferedReader.readLine();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        return data;
-    }
-
-    public static int getIntAsInput() {
-        return Integer.parseInt(getStringAsInput());
     }
 }

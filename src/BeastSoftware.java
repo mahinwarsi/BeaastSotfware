@@ -1,16 +1,11 @@
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-
 public class BeastSoftware {
 
-    private static final BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
     private static String name;
 
     public static void main(String[] args) {
         System.out.println("Hello my name is Mahin.");
         System.out.println("What is your name : ");
-        name = getStringAsInput();
+        name = UserInput.getStringAsInput();
 
         System.out.println("Hello " + name + " welcome to Beast Software.");
         if ("Mahin".equalsIgnoreCase(name))
@@ -20,9 +15,9 @@ public class BeastSoftware {
         int correctPasswordEntered = 0;
         do {
             System.out.println("Pls. enter your password here : ");
-            String password1 = getStringAsInput();
+            String password1 = UserInput.getStringAsInput();
             System.out.println("Pls. re-enter your password : ");
-            String password2 = getStringAsInput();
+            String password2 = UserInput.getStringAsInput();
             if (password1.equals(password2)) {
                 correctPasswordEntered = 1;
                 System.out.println("Password matched..");
@@ -32,7 +27,7 @@ public class BeastSoftware {
 
         } while (correctPasswordEntered == 0);
         System.out.println("Do you want know why This Software's name is Beast Software.Yes or no. ");
-        String beastAbout = getStringAsInput();
+        String beastAbout = UserInput.getStringAsInput();
         if (beastAbout.equals("Yes"))
             System.out.println("It's name is beast software because it can do alot of thing.");
         System.out.println("What would you like to do" + name);
@@ -48,7 +43,7 @@ public class BeastSoftware {
             System.out.println("7 = Calculate Triangle area.");
             System.out.println("8 = Calculate Circle area.");
             System.out.println("Have you made your choice : ");
-            int menu2 = getIntAsInput();
+            int menu2 = UserInput.getIntAsInput();
             switch (menu2) {
                 case 1:
                     Calculator calculator = new Calculator();
@@ -57,7 +52,7 @@ public class BeastSoftware {
 
                 case 2:
                     Pyramid pyramid = new Pyramid();
-                    pyramid.pyramid(name);
+                    pyramid.makePyramid(name);
                     break;
 
                 case 3:
@@ -71,23 +66,23 @@ public class BeastSoftware {
                     break;
 
                 case 5:
-                    AreaOfSquare isThisTheAreaOfSquare = new AreaOfSquare();
-                    AreaOfSquare.isThisTheAreaOfSquare(name);
+                    Square isThisTheSquare = new Square();
+                    Square.calculateArea(name);
                     break;
 
                 case 6:
-                    AreaOfRectangle isThisTheAreaOfRectangle = new AreaOfRectangle();
-                    AreaOfRectangle.isThisTheAreaOfRectangle(name);
+                    Rectangle isThisTheRectangle = new Rectangle();
+                    Rectangle.calculateArea(name);
                     break;
 
                 case 7:
-                    AreaOfTriangle calculateTriangle = new AreaOfTriangle();
-                    AreaOfTriangle.calculateTriangle(name);
+                    Triangle calculateTriangle = new Triangle();
+                    Triangle.calculateArea(name);
                     break;
 
                 case 8:
-                    AreaOfCircle calculateAreaOfCircle = new AreaOfCircle();
-                    AreaOfCircle.calculateAreaOfCircle(name);
+                    Circle calculateCircle = new Circle();
+                    Circle.calculateArea(name);
                     break;
 
                 default:
@@ -95,7 +90,7 @@ public class BeastSoftware {
             }
             System.out.println("Do you want to leave.");
             System.out.println("Yes or No : ");
-            String yesNo2 = getStringAsInput();
+            String yesNo2 = UserInput.getStringAsInput();
             if (yesNo2.equalsIgnoreCase("Yes")) {
                 System.out.println("Made By Mahin Alam Warsi.");
                 System.exit(0);
@@ -107,23 +102,5 @@ public class BeastSoftware {
             }
         } while (continueOrLeave == 0);
     }
-        
 
-    //sub
-    
-
-    private static String getStringAsInput() {
-        String data = null;
-
-        try {
-            data = bufferedReader.readLine();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        return data;
-    }
-
-    public static int getIntAsInput() {
-        return Integer.parseInt(getStringAsInput());
-    }
 }
