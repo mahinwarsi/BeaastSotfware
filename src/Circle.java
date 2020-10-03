@@ -14,19 +14,19 @@ public class Circle {
                 double pie = 3.14;
                 System.out.println("Enter the radious length : ");
                 int radiouslength = UserInput.getIntAsInput();
-                int sum10 = radiouslength * radiouslength;
-                int sum11 = (int) (sum10 * pie);
-                System.out.println("The area of your circle = " + sum11);
+                int sum1 = radiouslength * radiouslength;
+                int sum2 = (int) (sum1 * pie);
+                System.out.println("The area of your circle = " + sum2);
                 break;
 
             case "D":
                 double pie1 = 3.14;
                 System.out.println("Enter the diameter length : ");
                 int diameterlength = UserInput.getIntAsInput();
-                int sum12 = diameterlength / 2;
-                int sum13 = sum12 * sum12;
-                int sum14 = (int) (pie1 * sum13);
-                System.out.println("The area of your circle = " + sum14);
+                int sum3 = diameterlength / 2;
+                int sum4 = sum3 * sum3;
+                int sum5 = (int) (pie1 * sum4);
+                System.out.println("The area of your circle = " + sum5);
                 break;
 
             default:

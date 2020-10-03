@@ -23,14 +23,14 @@ public class Pyramid {
 
     private static void verticalPyramid() {
         System.out.println("Pls. enter your number : ");
-        int number21 = UserInput.getIntAsInput();
-        for (int a = 1; a <= number21; ++a) {
+        int number1 = UserInput.getIntAsInput();
+        for (int a = 1; a <= number1; ++a) {
             for (int m = 1; m <= a; ++m) {
                 System.out.print("* ");
             }
             System.out.println();
         }
-        int sum15 = number21 - 1;
+        int sum15 = number1 - 1;
         for (int i = sum15; i >= 1; --i) {
             for (int j = 1; j <= i; ++j) {
                 System.out.print("* ");
@@ -41,8 +41,8 @@ public class Pyramid {
 
     private static void halfPyramid() {
         System.out.println("Pls. enter your number :");
-        int number20 = UserInput.getIntAsInput();
-        for (int i = 1; i <= number20; ++i) {
+        int number2 = UserInput.getIntAsInput();
+        for (int i = 1; i <= number2; ++i) {
             for (int j = 1; j <= i; ++j) {
                 System.out.print("* ");
             }

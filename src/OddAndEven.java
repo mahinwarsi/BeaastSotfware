@@ -7,8 +7,8 @@ public class OddAndEven {
     public static void isOddOrEven(String name){
         System.out.println("Hello " + name + " welcome to odd and even.");
         System.out.println("Pls. enter a number : ");
-        int number18 = UserInput.getIntAsInput();
-        if (number18 % 2 == 0)
+        int number = UserInput.getIntAsInput();
+        if (number % 2 == 0)
             System.out.println("Your number is even");
         else
             System.out.println("Your number is odd");

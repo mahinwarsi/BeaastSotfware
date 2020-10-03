@@ -12,35 +12,31 @@ public class Triangle {
         switch (trianglre) {
             case "E":
                 System.out.println("Pls. enter the length : ");
-                int number12 = UserInput.getIntAsInput();
-                int sum7 = number12 * 3;
-                System.out.println("Total area of your triangle = " + sum7);
+                int number = UserInput.getIntAsInput();
+                int result = number * 3;
+                System.out.println("Total area of your triangle = " + result);
                 break;
 
             case "I":
                 System.out.println("Pls. enter the length of first line : ");
-                int number13 = UserInput.getIntAsInput();
+                int number1 = UserInput.getIntAsInput();
                 System.out.println("Enter the length of third line : ");
-                int number14 = UserInput.getIntAsInput();
-                int sum8 = number13 * 2 + number14;
-                System.out.println("Total area of your triangle = " + sum8);
+                int number2 = UserInput.getIntAsInput();
+                int result1 = number1 * 2 + number2;
+                System.out.println("Total area of your triangle = " + result1);
                 break;
             case "S":
                 System.out.println("Pls. enter the length of first line : ");
-                int number15 = UserInput.getIntAsInput();
+                int number3 = UserInput.getIntAsInput();
                 System.out.println("Enter the length of second line : ");
-                int number16 = UserInput.getIntAsInput();
+                int number4 = UserInput.getIntAsInput();
                 System.out.println("Enter the length of third line : ");
-                int number17 = UserInput.getIntAsInput();
-                int sub9 = number15 + number16 + number17;
-                System.out.println("Total area of your triangle = " + sub9);
+                int number5 = UserInput.getIntAsInput();
+                int result2 = number3 + number4 + number5;
+                System.out.println("Total area of your triangle = " + result2);
                 break;
             default:
                 System.out.println("You have taken a wrong choice.");
         }
-        System.out.println("Do you want to leave.");
-        System.out.println("Yes or no : ");
-        String yesNo = UserInput.getStringAsInput();
-
     }
 }

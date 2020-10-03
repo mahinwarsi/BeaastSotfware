@@ -8,11 +8,11 @@ public class Rectangle {
 
         System.out.println("Hello " + name + " welcome to Rectangle's area.");
         System.out.println("Pls. enter a the length : ");
-        int number10 = UserInput.getIntAsInput();
+        int number1 = UserInput.getIntAsInput();
         System.out.println("Pls. enter a the breadth : ");
-        int number11 = UserInput.getIntAsInput();
-        int sub6 = number10 * 2 + number11 * 2;
-        System.out.println("Total area of your Rectangle = " + sub6);
+        int number2 = UserInput.getIntAsInput();
+        int result = number1 * 2 + number2 * 2;
+        System.out.println("Total area of your Rectangle = " + result);
 
     }
 }
